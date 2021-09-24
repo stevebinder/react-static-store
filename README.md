@@ -1,11 +1,11 @@
 Creates a simple store for your **React application** that is manipulated with the state/setState api familiar to React developers. Data in the state can be accessed via HOC or direct reference.
 
-Create the store with **createStaticContext**.
+Create the store with **staticStore**.
 
 ```js
-import createStaticContext from 'react-static-context';
+import reactStaticStore from 'react-static-store';
 
-const MyStore = createStaticContext(
+const MyStore = reactStaticStore(
   (state, setState) => ({
     age: 30,
     setAge: age => setState({ age }),

@@ -38,5 +38,5 @@
   "scripts": {
     "build": "NODE_ENV=production webpack -p --progress --colors --display-modules --sort-modules-by size"
   },
-  "version": "2.0"
+  "version": "2.0.0"
 }
