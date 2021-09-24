@@ -1,0 +1,42 @@
+{
+  "description": "Create a React store.",
+  "dependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-next": "^1.2.0",
+    "webpack": "^3.0.0"
+  },
+  "files": ["bundle.js"],
+  "keywords": [
+    "action",
+    "actions",
+    "consumer",
+    "consumers",
+    "context",
+    "contexts",
+    "dispatch",
+    "global",
+    "provider",
+    "providers",
+    "react",
+    "singleton",
+    "state",
+    "states",
+    "static",
+    "store",
+    "stores"
+  ],
+  "license": "ISC",
+  "main": "bundle.js",
+  "name": "react-static-store",
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p --progress --colors --display-modules --sort-modules-by size"
+  },
+  "version": "2.0"
+}
