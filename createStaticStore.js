@@ -30,7 +30,7 @@ export default (creator, initializer = null) => {
     });
   };
 
-  const updateState = changes =>
+  const updateState = (changes = {}) =>
     Object.entries(changes).forEach(([key, value]) => stateValue[key] = value);
 
   class SC extends PureComponent {
@@ -57,7 +57,10 @@ export default (creator, initializer = null) => {
           }
         });
         if (initializer) {
-          setTimeout(() => initializer(stateValue, setState));
+          setTimeout(() => {
+            initializer(stateValue, setState);
+            setState();
+          });
         }
       }
     }
