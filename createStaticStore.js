@@ -57,8 +57,8 @@ export default (creator, initializer = null) => {
           }
         });
         if (initializer) {
-          setTimeout(() => {
-            initializer(stateValue, setState);
+          setTimeout(async () => {
+            await initializer(stateValue, setState);
             setState();
           });
         }
